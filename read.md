@@ -127,4 +127,8 @@ config driven ui:
 
 
 
+## React Hooks 
+they are normal js functions. 
+### useState : superpower state variables in react 
 
+whenever a state variable updates react rerenders the component/ 

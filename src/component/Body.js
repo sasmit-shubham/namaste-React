@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import ResCard from "./ResCard";
 const resList = [
     {
       type: "restaurant",
@@ -1884,55 +1883,8 @@ const resList = [
       subtype: "basic",
     },
   ];
-const Header = () => (
-    <div>
-        <div className="container">
-           <div className="logo-container">
-            <img className="logo" src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148986823.jpg" alt="food logo" />
-           </div>
-           <div className="navbar">
-             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact us</li>
-                <li>Cart</li>
-             </ul>
-           </div>   
-        </div>
-    </div>
-)
-const ResCard = (props) =>{
-    const {resData} = props;
-    const {
-        cloudinaryImageId,
-        name,
-        avgRating,
-        cuisines,
-        costForTwo,
-        deliveryTime,
-      } = resData?.data;
-    
-    return (
-        
-    <div className="card-container">
-        <div className="card">
-            <img
-                className="res-logo"
-                alt="res-logo"
-                src={
-                "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-                cloudinaryImageId
-                }
-            />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{avgRating} stars</h4>
-            <h4>₹{costForTwo / 100} FOR TWO</h4>
-            <h4>{deliveryTime} minutes</h4>
-        </div>
-    </div>
-    )
-}
+
+
 const Body = () =>(
     <div className="body">
         {/* <div className="Search">Search</div> */}
@@ -1947,14 +1899,4 @@ const Body = () =>(
     </div>
 )
 
-const App = () =>
-(
-    <div>
-        <Header/>
-        <Body/>
-    </div>
-)
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App/>);
+export default Body;
