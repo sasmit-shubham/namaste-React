@@ -1,3 +1,56 @@
-#heading{
+.heading{
     color: cadetblue;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+.navbar>ul{
+    display: flex;
+    margin-right:30px;
+}
+.navbar>ul>li{
+    font-size: 20px;
+    padding: 10px;
+    margin:10px;
+    list-style:none;
+}
+.logo{
+    padding:10px;
+    margin:10px;
+    height: 70px;
+    border-radius: 50%;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-container{
+    padding:20px 0;
+    margin:10px 10px 10px 0;
+}
+.card{
+    padding:5px;
+    width: 200px;
+}
+.card:hover{
+    border: 1px solid;
+    cursor: pointer;
+}
+.card>img{
+    width: 100% ;
+}
+.card>h3{
+    margin:0.5em 0;
+}
+.card>h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+    margin:0.3em 0;
+}
+
+
+    
